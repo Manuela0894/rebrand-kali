@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+    min-height: 100vh;
+  line-height: 1.5;
+    background:
+    radial-gradient(
+      circle at top left,
+      rgba(174, 104, 255, 0.35),
+      transparent 60%
+    ),
+    url("/src/assets/images/kali-background.png") center / 800px no-repeat,
+    var(--background);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+:root {
+  --primary: #AE68FF;
+  --secondary: #D1E5F9;
+  --accent: #90C0E2;
+  --background: #0E0E19;
+}
