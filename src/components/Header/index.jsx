@@ -1,30 +1,25 @@
-import React from "react";
-import kaliIcon from "../../assets/icons/kali-icon.svg";
-import docIcon from "../../assets/icons/doc-icon.svg";
+import './style.css'; 
 
-import * as S from "./style"; 
-
-const NavBar = () => {
+const Navbar = () => {
   return (
-    <S.NavContainer>
-      <S.Logo src={kaliIcon} alt="Kali Logo" />
+    <nav className="nav-container">
+      <img src="seu-logo.svg" alt="Logo" className="logo" />
+      
+      <div className="nav-content">
+        <ul className="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
 
-      <S.NavContent>
-        <S.NavList>
-          <li><a href="#">Get Kali</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Community</a></li>
-        </S.NavList>
+        <div className="doc-wrapper">
+          <img src="icone-doc.svg" alt="Docs" />
+          <a href="#docs">Docs</a>
+        </div>
+      </div>
 
-        <S.DocWrapper>
-          <img src={docIcon} alt="Docs" />
-          <a href="#">Doc</a>
-        </S.DocWrapper>
-      </S.NavContent>
-
-      <S.BottomBorder />
-    </S.NavContainer>
+      <div className="bottom-border" />
+    </nav>
   );
 };
 
-export default NavBar;
+export default Navbar;

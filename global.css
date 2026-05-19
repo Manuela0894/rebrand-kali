@@ -27,7 +27,7 @@ body::before {
       rgba(174, 104, 255, 0.35),
       transparent 60%
     ),
-    url("/src/assets/images/kali-background.png") center / 1000px no-repeat;
+    url("/src/assets/images/kali-background.png") center / 900px no-repeat;
   
   animation: fade 2s infinite; 
 }

@@ -1,33 +1,26 @@
+import './style.css'; 
+
+
 const Hero = () => {
   return (
-    
-    <section
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "flex-start",
-        padding: "160px 100px",
-        color: "white",
-        width: "351"
-      }}
-    >
-      <h1 style={{ 
-        fontSize: "64px", 
-        marginBottom: "16px",
-        color: "#D1E5F9",
-        width: "800px",
-        lineHeight: 1.3,
-        fontWeight:600,
-
-       }}>
-       The most advanced Penetration Testing Distribution
+    <section className="hero-section">
+      <h1 className="hero-title">
+        The most advanced Penetration Testing Distribution
       </h1>
-      <p style={{ width: "1000px",
-        fontWeight: "300px",
-        fontSize: "24px",
-       }}>
-        Kali Linux is an open-source, Debian-based Linux distribution geared  towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering
+      <p className="hero-description">
+        Kali Linux is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering
       </p>
+      <div className="hero-actions">
+        <button className="btn-primary">
+          Download
+        </button>
+
+        <div className="btn-group">
+          <a href="#docs" className="btn-anchor">Documentation</a>
+          <a href="#community" className="btn-anchor">Community</a>
+          <a href="#blog" className="btn-anchor">Blog</a>
+        </div>
+      </div>
     </section>
   );
 };
