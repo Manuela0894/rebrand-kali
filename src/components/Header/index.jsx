@@ -1,9 +1,11 @@
 import './style.css'; 
+import kaliIcon from "../../assets/icons/kali-icon.svg";
+import iconDoc from "../../assets/icons/doc-icon.svg";
 
 const Navbar = () => {
   return (
     <nav className="nav-container">
-      <img src="seu-logo.svg" alt="Logo" className="logo" />
+      <img src={kaliIcon} className="logo" />
       
       <div className="nav-content">
         <ul className="nav-list">
@@ -12,7 +14,7 @@ const Navbar = () => {
         </ul>
 
         <div className="doc-wrapper">
-          <img src="icone-doc.svg" alt="Docs" />
+          <img src={iconDoc} />
           <a href="#docs">Docs</a>
         </div>
       </div>

@@ -11,7 +11,7 @@ const Hero = () => {
         Kali Linux is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering
       </p>
       <div className="hero-actions">
-        <button className="btn-primary">
+        <button className="primary-btn">
           Download
         </button>
 

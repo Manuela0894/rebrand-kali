@@ -29,40 +29,84 @@
 .hero-actions {
   display: flex;
   align-items: center;
-  gap: 40%; 
+  padding-top: 40%;
+  gap: 100%; 
 }
 
-.btn-primary {
+.primary-btn {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  cursor: pointer;
+
+  transition: all 0.2s;
   border-radius: 36px;
   border: 1px solid #DDC7F8;
   background: rgba(130, 59, 214, 0.00);
   box-shadow: 4px 1px 10px 10px rgba(86, 11, 173, 0.25);
 
-  color: white; 
-  padding: 12px 24px;
+  
+  padding: 17px 25px;
   border: 1px solid white;
   border-radius: 40px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  
 }
 
-.btn-primary:hover {
-  text-decoration: none;
+.primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: #DDC7F8;
+}
+
+.primary-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.primary-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.primary-btn::after {
+  background-color: #D1E5F9;
+  color: rgba(130, 59, 214, 0.00);
+}
+
+.primary-btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
 
 
 .btn-group {
   display: flex;
-  gap: 16px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 .btn-anchor {
   color: #D1E5F9;
   text-decoration: none;
   font-size: 16px;
-  transition: color 0.2s;
+  transition: all 0.2s;
+
+  padding: 14px 20px; 
+  border-radius: 22px;
 }
 
 .btn-anchor:hover {
@@ -70,4 +114,13 @@
   color: white;
   
   text-decoration: none;
+}
+
+.btn-anchor:focus,
+.btn-anchor:active {
+  outline: none; 
+  text-decoration: none; 
+  color: white;
+
+  box-shadow: 0 0 0 1px white;
 }
