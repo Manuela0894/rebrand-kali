@@ -11,11 +11,12 @@ const Navbar = () => {
         <ul className="nav-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#about">Contact</a></li>
         </ul>
 
         <div className="doc-wrapper">
           <img src={iconDoc} />
-          <a href="#docs">Docs</a>
+          <a href="#docs">Documentaion</a>
         </div>
       </div>
 

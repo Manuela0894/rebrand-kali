@@ -1,8 +1,15 @@
-import './style.css'; 
+import '../styles/style.css';
+import HeroBackground from '../components/HeroBackground/index'
+import NavBar from '../components/Header/index'
+import CardCarousel from '../components/CardCarousel/index'
+import ToolsSection from '../components/ToolsSection/index'
+import Footer from '../components/Footer/index'
 
-
-const Hero = () => {
+function Hero() {
   return (
+    <>
+     <NavBar/>
+    <HeroBackground>
     <section className="hero-section">
       <h1 className="hero-title">
         The most advanced Penetration Testing Distribution
@@ -22,6 +29,11 @@ const Hero = () => {
         </div>
       </div>
     </section>
+    </HeroBackground>
+    <ToolsSection/>
+    <CardCarousel/>
+    <Footer/>
+    </>
   );
 };
 

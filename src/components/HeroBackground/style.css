@@ -1,0 +1,45 @@
+.hero-container {
+  position: relative; 
+  width: 100%;
+  min-height: 100vh; 
+  background-color: var(--background); 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-bg-effect {
+  content: "";
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(174, 104, 255, 0.35),
+      transparent 60%
+    ),
+    url("/src/assets/images/kali-background.png") right 100px / 900px no-repeat;
+  
+  animation: fadeBg 1.7s infinite ease-in-out; 
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+
+@keyframes fadeBg {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; } 
+}

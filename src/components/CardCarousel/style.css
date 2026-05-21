@@ -1,0 +1,99 @@
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 4px;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.custom-card {
+  display: flex;
+  height: 240px;
+  padding: 30px 30px 49px 30px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  position: relative;
+  overflow: hidden;
+
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 13px;
+
+  box-shadow: 0 4px 2px 0 rgba(255, 255, 255, 0.68);
+}
+
+.card-slide {
+  position: absolute;
+  width: calc(100% - 260px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateX(20px);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+  pointer-events: none;
+}
+
+.card-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+  position: relative;
+}
+
+.card-title {
+  color: var(--primary, #ae68ff);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card-text {
+  color: var(--secondary, #d1e5f9);
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 12px;
+}
+
+.dot-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #d1e5f9;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot-btn.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  transform: scale(1.2);
+}
