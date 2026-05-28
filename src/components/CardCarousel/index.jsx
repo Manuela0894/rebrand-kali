@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 import './style.css';
+import icon1 from "../../assets/icons/logo-xfce.svg";
+import icon2 from "../../assets/icons/logo-kde.svg";
+import icon3 from "../../assets/icons/logo-gnome.svg"
 
 export default function CardCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -8,17 +11,17 @@ export default function CardCarousel() {
   const carouselData = [
     {
       title: "Xfce",
-      image: "/src/assets/icons/logo-xfce.svg",
+      image: icon1,
       text: "Xfce consists of separately packaged parts that together provide all functions of the desktop environment, but can be selected in subsets to suit user needs and preferences. This is Kali's default desktop environment."
     },
     {
       title: "KDE Plasma",
-      image: "/src/assets/icons/logo-kde.svg",
+      image: icon2,
       text: "With Plasma the user is king. Not happy with the color scheme? Change it! Want to have your panel on the left edge of the screen? Move it! Don't like the font? Use a different one! Download custom widgets in one click and add them to your desktop or panel."
     },
     {
       title: "GNOME Shell",
-      image: "/src/assets/icons/logo-gnome.svg",
+      image: icon3,
       text: "A press of a button is all it takes to view your open windows, launch applications, or check if you have new messages. Having everything in one place is convenient and means that you don't have to learn your way through a maze of different technologies."
     }
   ];

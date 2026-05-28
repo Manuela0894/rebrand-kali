@@ -4,6 +4,7 @@ import NavBar from '../components/Header/index'
 import CardCarousel from '../components/CardCarousel/index'
 import ToolsSection from '../components/ToolsSection/index'
 import Footer from '../components/Footer/index'
+import BlogSection from '../components/BlogSection/index'
 
 function Hero() {
   return (
@@ -32,6 +33,7 @@ function Hero() {
     </HeroBackground>
     <ToolsSection/>
     <CardCarousel/>
+    <BlogSection/>
     <Footer/>
     </>
   );

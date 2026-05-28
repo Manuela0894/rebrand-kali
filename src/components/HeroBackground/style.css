@@ -24,7 +24,7 @@
       rgba(174, 104, 255, 0.35),
       transparent 60%
     ),
-    url("/src/assets/images/kali-background.png") right 100px / 900px no-repeat;
+    url("/src/assets/images/kali-background.png") center 100px / 900px no-repeat;
   
   animation: fadeBg 1.7s infinite ease-in-out; 
 }
