@@ -1,6 +1,6 @@
 
 import './style.css';
-import blogImg4 from "../../assets/images/2025release-banner.jpg";
+import blogImg4 from "../../assets/images/later-release-banner.jpg";
 import blogImg1 from "../../assets/images/ollama-banner.jpg";
 import blogImg2 from "../../assets/images/release-banner.jpg";
 import blogImg3 from "../../assets/images/claude-banner.jpg";
